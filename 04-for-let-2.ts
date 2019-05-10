@@ -30,6 +30,7 @@ blockLexicalEnvironment = {
   x:
   outer: <functionLexicalEnvironment>
 }
+
 // invoke anonymous function
 functionLexicalEnvironment = {
   outer: <blockLexicalEnvironment>

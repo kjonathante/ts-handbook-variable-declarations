@@ -8,7 +8,7 @@ function f() {
     */
     var b = a + 1;
     return b;
-  }
+  };
 }
 var g = f();
 console.log(g()); // returns '11'
@@ -24,7 +24,7 @@ function example_1a(shouldInitialize: boolean) {
   return x;
 }
 
-console.log(example_1a(true));  // returns '10'
+console.log(example_1a(true)); // returns '10'
 console.log(example_1a(false)); // returns 'undefined'
 
 /*
@@ -36,11 +36,12 @@ function example_3a(condition, x) {
     let x = 100;
     return x;
   }
+  
   return x;
 }
 
-example_3a(false, 0); // returns '0'
-example_3a(true, 0);  // returns '100'
+console.log(example_3a(false, 0)); // returns '0'
+console.log(example_3a(true, 0)); // returns '100'
 
 /*
   Block-scoped variable capturing
@@ -51,11 +52,12 @@ function example_4a() {
 
   if (true) {
     let city = "Seattle";
-    getCity = function () {
+    getCity = function() {
       return `${state} ${city}`;
-    }
+    };
   }
 
   return getCity();
 }
-console.log(example_4a())
+
+console.log(example_4a());
